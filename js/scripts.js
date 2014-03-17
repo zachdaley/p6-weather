@@ -8,7 +8,7 @@ $('#getWeather button').on('click', function() {
   // 2. Pass weather into _simpleWeather()_ object
   $.simpleWeather({
     
-    location: 'zipcode',
+    location: zipcode,
   
     success: function(weather) {
       
