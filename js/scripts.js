@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	$.simpleWeather({
     
-    location: '99004',
+    location: '99206',
     
     success: function(weather) {
       
@@ -14,18 +14,18 @@ $(document).ready(function(){
       // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
       var temp, tomHi, tomLo, cityAndState; 
 
-      temp = weather.temp + '<span> f</span>';
-      tomHi = weather.tomorrow.high;
-      tomLo = weather.tomorrow.low;
-      cityAndState = weather.city + ' , ' + weather.region;
+      spokanetemp = weather.temp + '<span> f</span>';
+      spokanetomHi = weather.tomorrow.high;
+      spokanetomLo = weather.tomorrow.low;
+      spokanecityAndState = weather.city + ' , ' + weather.region;
 
       console.log(cityAndState);
 
       // Display Weather
-      $('.temp').html(temp);
-      $('.tomHi').html(tomHi);
-      $('.tomLo').html(tomLo);
-      $('.cityAndState').html(cityAndState);
+      $('.spokanetemp').html(spokanetemp);
+      $('.spokanetomHi').html(spokanetomHi);
+      $('.spokanetomLo').html(spokanetomLo);
+      $('.spokanecityAndState').html(spokanecityAndState);
 
     },
     

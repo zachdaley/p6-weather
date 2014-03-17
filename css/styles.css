@@ -2,8 +2,15 @@ h1 {
 	font-size: 4em;
 }
 
+h3 {
 
- {
-
-	background: url('img/rain.jpg');
+	text-align: center;
 }
+.tabs dd > a { 
+
+padding-left: 1rem;
+padding-right: 1rem;
+
+}
+
+
