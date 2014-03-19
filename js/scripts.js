@@ -18,11 +18,11 @@ $(document).foundation();
 
       var temp = weather.temp;
 
-      var city = weather.city;
+      var cityAndState = weather.city + ',' + weather.region;
 
       var current = weather.currently;
 
-      var code = '<i class="icon-'+ weather.code +'"></i>';
+      var code = '<img src=' + weather.image + '>';
 
       var temp = weather.temp + '&deg;' + weather.units.temp;
 
@@ -34,7 +34,7 @@ $(document).foundation();
       // Output to hooks in HTML
       $('.code').html(code);
       $('.temp').html(temp);
-      $('.city').html(city);
+      $('.cityAndState').html(cityAndState);
       $('.current').html(current);
       $('.low').html(low);
       $('.high').html(high);
