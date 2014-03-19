@@ -20,9 +20,9 @@ $(document).foundation();
 
       var city = weather.city;
 
-      var currently = weather.currently;
+      var current = weather.currently;
 
-      var code = '<i class="icon-'+weather.code+'"></i>';
+      var code = '<i class="icon-'+ weather.code +'"></i>';
 
       var temp = weather.temp + '&deg;' + weather.units.temp;
 
@@ -35,7 +35,7 @@ $(document).foundation();
       $('.code').html(code);
       $('.temp').html(temp);
       $('.city').html(city);
-      $('.currently').html(currently);
+      $('.current').html(current);
       $('.low').html(low);
       $('.high').html(high);
 
