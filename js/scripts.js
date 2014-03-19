@@ -22,7 +22,7 @@ $(document).foundation();
 
       var currently = weather.currently;
 
-      var code = '<img src=' + weather.image + '>';
+      var code = '<i class="icon-'+weather.code+'"></i>';
 
       var temp = weather.temp + '&deg;' + weather.units.temp;
 
